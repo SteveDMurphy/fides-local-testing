@@ -1,0 +1,41 @@
+data_use:
+  - fides_key: provide.service.delivery
+    name: Facilitate Service Delivery
+    description: Services to facilitate usage of a product
+    recipients:
+    - Microsoft
+    - Facebook
+    - Linkedin
+    - Google
+    - Apple
+    legal_basis: Contract
+    special_category: Consent
+    parent_key: provide.service
+  - fides_key: provide.service.secure_access
+    name: Provide Secure Access
+    description: Services to provide secure access to a product
+    legal_basis: Contract
+    special_category: Consent
+    parent_key: provide.service
+
+data_subject:
+  - fides_key: b2b_creator
+    name: Creator (b2b)
+    description: A business-to-business creator
+    rights:
+      strategy: ALL
+    automated_decisions_or_profiling: false
+
+data_category:
+  - fides_key: user.name.first_name
+    name: First Name
+    description: The first name of a user
+    parent_key: user.name
+  - fides_key: user.name.last_name
+    name: Last Name
+    description: The last name of a user
+    parent_key: user.name
+  - fides_key: user.username
+    name: Username
+    description: The username of a user
+    parent_key: user

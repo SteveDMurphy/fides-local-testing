@@ -1,0 +1,39 @@
+dataset:
+- fides_key: sample_dataset
+  organization_fides_key: default_organization
+  name: Sample User Dataset
+  description: Sample platform user data
+  meta: null
+  data_categories: []
+  data_qualifiers:
+  - aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+  retention: "Life contract +2y"
+  collections:
+  - name: users
+    description: User information
+    data_categories: []
+    data_qualifiers:
+    - aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    fields:
+    - name: created_at
+      description: User's creation timestamp
+      data_categories:
+      - system.operations
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+    - name: email
+      description: User's Email
+      data_categories:
+      - user.contact.email
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: Account termination
+    - name: first_name
+      description: User's first name
+      data_categories:
+      - user.name.first_name
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+      retention: Account termination
+    - name: ip_address
+      description: User's IP Address
+      data_categories:
+      - user.device.ip_address
+      data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified

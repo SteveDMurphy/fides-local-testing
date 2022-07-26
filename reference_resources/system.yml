@@ -1,0 +1,27 @@
+system:
+  - fides_key: sample_platform
+    name: Platform
+    description: Our sample platform
+    system_type: Service
+    administrating_department: Platform
+    data_responsibility_title: Controller
+    third_country_transfers:
+    - USA
+    # data_protection_impact_assessment:
+    #   is_required: True
+    #   progress: Complete
+    #   link: https://example.org/analytics_system_data_protection_impact_assessment
+    privacy_declarations:
+      - name: Combined Privacy Declaration
+        data_categories:
+          # - user.name
+          - user.username
+          - user.name.first_name
+          - user.name.last_name
+          - user.contact.email
+        data_use: provide.service.delivery
+        data_subjects:
+          - b2b_creator
+        data_qualifier: aggregated.anonymized.unlinked_pseudonymized.pseudonymized.identified
+        dataset_references:
+          - sample_dataset
