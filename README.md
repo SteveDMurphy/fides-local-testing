@@ -111,15 +111,19 @@ data_category:
 ```
 
 Each taxonomy type provides different context to be applied across a privacy declaration. A cheat sheet for each of the attributes is provided below. Depending on your organization structure, different teams can be responsible for different components of the privacy policy.
+
 _Data Categories_: Currently no further attribution from the default, but new categories can be extended via the UI or CLI.
+
 _Data Uses_:
 * Recipients - A list of any external recipients of the personal data
 * Legal Basis - The legal basis for processing personal data
 * Special Category - The special category for processing personal data
 * Legitimate Interests - If a legitimate interest exists and any metadata (i.e. impact assessment)
+
 _Data Subjects_:
 * Righs Available - Which legal rights are available to the data subject
 * Profiling - Denotes whether or not automated profiling or decisions are made
+
 _Data Qualifiers_: Currently no further attribution from the default, and not normally extended, however also possible from the UI or CLI.
 
 As an example of an organizational construct around this, a non-technical user can help maintain the taxonomy in concert with other professionals. Imagine partnering with a privacy officer to create the profile of a Data Subject for a new system. A technical user can be responsible for applying data categories to datasets and systems they work on (both UI and CLI). Fides provides the process and tools to move this work out of email and spreadsheets into an auditable information system.
